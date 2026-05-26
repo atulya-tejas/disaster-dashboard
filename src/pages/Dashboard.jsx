@@ -10,13 +10,13 @@ const Dashboard = () => {
 
       <Sidebar />
 
-      <div className="ml-64 flex-1 p-8">
+      <div className="md:ml-64 flex-1 p-4 md:p-8 mt-4 md:mt-0">
 
         <Navbar />
 
         {/* Stats Cards */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
 
           <StatCard
             title="Active Trainings"

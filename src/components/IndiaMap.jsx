@@ -28,7 +28,7 @@ const IndiaMap = () => {
         center={[22.5937, 78.9629]}
         zoom={5}
         style={{
-          height: "500px",
+          height: window.innerWidth < 768 ? "350px" : "500px",
           width: "100%"
         }}
       >

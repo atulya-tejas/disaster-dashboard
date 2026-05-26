@@ -9,13 +9,13 @@ import { Link } from "react-router-dom"
 
 const Sidebar = () => {
   return (
-    <div className="w-64 h-screen glass fixed p-5">
+    <div className="w-full md:w-64 h-auto md:h-screen glass md:fixed p-5 z-50">
 
       <h1 className="text-2xl font-bold text-cyan-400 mb-10">
         Disaster Monitor
       </h1>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex md:flex-col gap-6 overflow-x-auto">
 
         <Link
           to="/dashboard"

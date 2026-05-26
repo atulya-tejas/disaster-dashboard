@@ -16,7 +16,7 @@ const chartData = trainingData.map((item) => ({
 
 const TrainingChart = () => {
   return (
-    <div className="glass p-5 rounded-2xl h-[400px]">
+    <div className="glass p-5 rounded-2xl h-[300px] md:h-[400px]">
 
       <h2 className="text-xl font-bold mb-4">
         Trainings Analytics

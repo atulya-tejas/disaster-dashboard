@@ -13,7 +13,7 @@ const Records = () => {
 
         <Navbar />
 
-        <div className="glass p-6 rounded-2xl overflow-auto">
+        <div className="glass p-4 md:p-6 rounded-2xl overflow-x-auto">
 
           <h1 className="text-2xl font-bold mb-6 text-cyan-400">
             Training Records

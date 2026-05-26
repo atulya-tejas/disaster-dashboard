@@ -6,7 +6,7 @@ const AddTraining = () => {
 
       <Sidebar />
 
-      <div className="ml-64 flex-1 p-8">
+      <div className="md:ml-64 flex-1 p-4 md:p-8">
 
         <div className="glass p-8 rounded-2xl max-w-2xl mx-auto">
 
