@@ -19,18 +19,34 @@ const IndiaMap = () => {
     <div className="glass rounded-2xl overflow-hidden">
 
       <div className="p-4 border-b border-slate-700">
+
         <h2 className="text-xl font-bold">
-          Trainings Map
+          India Training Map
         </h2>
+
       </div>
 
       <MapContainer
-        center={[22.5937, 78.9629]}
-        zoom={5}
-        style={{
-          height: window.innerWidth < 768 ? "350px" : "500px",
-          width: "100%"
-        }}
+      center={[22.5937, 79.9629]}
+      zoom={4}
+      minZoom={5}
+      maxZoom={7}
+      maxBounds={[
+      [6.0, 68.0],   // Southwest India bounds
+      [38.0, 98.0],  // Northeast India bounds
+      ]}
+      maxBoundsViscosity={1.0}
+      dragging={true}
+      scrollWheelZoom={false}
+      doubleClickZoom={false}
+      touchZoom={false}
+      zoomControl={false}
+      style={{
+        height: window.innerWidth < 768
+          ? "350px"
+          : "500px",
+        width: "100%"
+      }}
       >
 
         <TileLayer
@@ -39,10 +55,11 @@ const IndiaMap = () => {
         />
 
         {trainingData.map((item, index) => (
+
           <CircleMarker
             key={index}
             center={[item.lat, item.lng]}
-            radius={20}
+            radius={18}
             pathOptions={{
               color: getColor(item.trainings),
               fillColor: getColor(item.trainings),
@@ -51,6 +68,7 @@ const IndiaMap = () => {
           >
 
             <Popup>
+
               <div className="text-black">
 
                 <h2 className="font-bold text-lg">
@@ -66,9 +84,11 @@ const IndiaMap = () => {
                 </p>
 
               </div>
+
             </Popup>
 
           </CircleMarker>
+
         ))}
 
       </MapContainer>

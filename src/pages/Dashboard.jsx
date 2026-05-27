@@ -1,4 +1,3 @@
-import Sidebar from "../components/Sidebar"
 import Navbar from "../components/Navbar"
 import StatCard from "../components/StatCard"
 import IndiaMap from "../components/IndiaMap"
@@ -6,17 +5,20 @@ import TrainingChart from "../components/TrainingChart"
 
 const Dashboard = () => {
   return (
-    <div className="flex bg-slate-900 min-h-screen text-white">
+    <div className="bg-slate-900 min-h-screen text-white">
 
-      <Sidebar />
+      <Navbar />
 
-      <div className="md:ml-64 flex-1 p-4 md:p-8 mt-4 md:mt-0">
+      <div className="p-4 md:p-8">
 
-        <Navbar />
-
-        {/* Stats Cards */}
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
+        <div className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          xl:grid-cols-4
+          gap-6
+          mb-8
+        ">
 
           <StatCard
             title="Active Trainings"
@@ -44,13 +46,9 @@ const Dashboard = () => {
 
         </div>
 
-        {/* Map */}
-
         <div className="mb-8">
           <IndiaMap />
         </div>
-
-        {/* Charts */}
 
         <TrainingChart />
 

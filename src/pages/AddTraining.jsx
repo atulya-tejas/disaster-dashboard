@@ -1,16 +1,29 @@
-import Sidebar from "../components/Sidebar"
+import Navbar from "../components/Navbar"
 
 const AddTraining = () => {
   return (
-    <div className="flex bg-slate-900 min-h-screen text-white">
+    <div className="bg-slate-900 min-h-screen text-white">
 
-      <Sidebar />
+      <Navbar />
 
-      <div className="md:ml-64 flex-1 p-4 md:p-8">
+      <div className="p-4 md:p-8">
 
-        <div className="glass p-8 rounded-2xl max-w-2xl mx-auto">
+        <div className="
+          glass
+          p-6
+          md:p-8
+          rounded-2xl
+          max-w-2xl
+          mx-auto
+        ">
 
-          <h1 className="text-3xl font-bold text-cyan-400 mb-8">
+          <h1 className="
+            text-2xl
+            md:text-3xl
+            font-bold
+            text-cyan-400
+            mb-8
+          ">
             Add Training
           </h1>
 
@@ -19,28 +32,59 @@ const AddTraining = () => {
             <input
               type="text"
               placeholder="Training Name"
-              className="w-full p-3 rounded-lg bg-slate-800"
+              className="
+                w-full
+                p-3
+                rounded-lg
+                bg-slate-800
+              "
             />
 
             <input
               type="text"
               placeholder="City"
-              className="w-full p-3 rounded-lg bg-slate-800"
+              className="
+                w-full
+                p-3
+                rounded-lg
+                bg-slate-800
+              "
             />
 
             <input
               type="number"
               placeholder="Participants"
-              className="w-full p-3 rounded-lg bg-slate-800"
+              className="
+                w-full
+                p-3
+                rounded-lg
+                bg-slate-800
+              "
             />
 
-            <select className="w-full p-3 rounded-lg bg-slate-800">
+            <select
+              className="
+                w-full
+                p-3
+                rounded-lg
+                bg-slate-800
+              "
+            >
               <option>Flood</option>
               <option>Earthquake</option>
               <option>Cyclone</option>
             </select>
 
-            <button className="w-full bg-cyan-500 p-3 rounded-lg font-bold hover:bg-cyan-600">
+            <button
+              className="
+                w-full
+                bg-cyan-500
+                p-3
+                rounded-lg
+                font-bold
+                hover:bg-cyan-600
+              "
+            >
               Submit Training
             </button>
 

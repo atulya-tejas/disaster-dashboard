@@ -1,4 +1,3 @@
-import Sidebar from "../components/Sidebar"
 import Navbar from "../components/Navbar"
 
 import {
@@ -20,17 +19,27 @@ const COLORS = [
 
 const Analytics = () => {
   return (
-    <div className="flex bg-slate-900 min-h-screen text-white">
+    <div className="bg-slate-900 min-h-screen text-white">
 
-      <Sidebar />
+      <Navbar />
 
-      <div className="ml-64 flex-1 p-8">
+      <div className="p-4 md:p-8">
 
-        <Navbar />
+        <div className="
+          glass
+          p-4
+          md:p-6
+          rounded-2xl
+          h-[400px]
+          md:h-[500px]
+        ">
 
-        <div className="glass p-6 rounded-2xl h-[500px]">
-
-          <h1 className="text-2xl font-bold mb-6 text-cyan-400">
+          <h1 className="
+            text-2xl
+            font-bold
+            mb-6
+            text-cyan-400
+          ">
             Analytics
           </h1>
 
@@ -42,7 +51,7 @@ const Analytics = () => {
                 data={trainingData}
                 dataKey="trainings"
                 nameKey="city"
-                outerRadius={180}
+                outerRadius={120}
                 label
               >
 

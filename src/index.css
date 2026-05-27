@@ -10,8 +10,28 @@ body {
   font-family: Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .glass {
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.1);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input,
+select,
+button {
+  outline: none;
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
 }

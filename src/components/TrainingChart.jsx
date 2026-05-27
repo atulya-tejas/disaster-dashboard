@@ -16,13 +16,21 @@ const chartData = trainingData.map((item) => ({
 
 const TrainingChart = () => {
   return (
-    <div className="glass p-5 rounded-2xl h-[300px] md:h-[400px]">
+    <div className="
+      glass
+      p-4
+      md:p-5
+      rounded-2xl
+      h-[300px]
+      md:h-[400px]
+    ">
 
       <h2 className="text-xl font-bold mb-4">
         Trainings Analytics
       </h2>
 
       <ResponsiveContainer width="100%" height="100%">
+
         <BarChart data={chartData}>
 
           <XAxis dataKey="city" />
@@ -35,6 +43,7 @@ const TrainingChart = () => {
           />
 
         </BarChart>
+
       </ResponsiveContainer>
 
     </div>
